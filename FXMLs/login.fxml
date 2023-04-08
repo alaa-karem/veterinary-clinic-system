@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Pane fx:id="bgPane" prefHeight="700.0" prefWidth="800.0">
+            <children>
+                <ImageView fitHeight="700.0" fitWidth="800.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@bg.jpg" />
+                    </image>
+                </ImageView>
+            </children></Pane>
+        <Pane layoutX="788.0" prefHeight="710.0" prefWidth="631.0" style="-fx-background-color: #7CB095;">
+            <children>
+                <Label alignment="CENTER" layoutX="198.0" layoutY="36.0" prefHeight="76.0" prefWidth="194.0" text="LogIn">
+                    <font>
+                        <Font name="Gabriola" size="60.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblusername" layoutX="34.0" layoutY="217.0" prefHeight="76.0" prefWidth="194.0" text="User Name:">
+                    <font>
+                        <Font name="Gabriola" size="35.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblpassword" layoutX="34.0" layoutY="317.0" prefHeight="76.0" prefWidth="194.0" text="Password:">
+                    <font>
+                        <Font name="Gabriola" size="35.0" />
+                    </font>
+                </Label>
+                <Label layoutX="47.0" layoutY="510.0" prefHeight="76.0" prefWidth="263.0" text="Don't have an accout?">
+                    <font>
+                        <Font name="Gabriola" size="35.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtusername" layoutX="202.0" layoutY="241.0" style="-fx-border-color: black;" />
+                <PasswordField fx:id="txtpassword" layoutX="207.0" layoutY="345.0" style="-fx-border-color: black;" />
+                <Button fx:id="btnsignin" layoutX="179.0" layoutY="430.0" mnemonicParsing="false" onAction="#signin" prefHeight="68.0" prefWidth="157.0" style="-fx-background-color: white; -fx-border-color: black;" text="Sign In">
+                    <font>
+                        <Font name="Gabriola" size="35.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btbsignup" layoutX="338.0" layoutY="525.0" mnemonicParsing="false" onAction="#signup" prefHeight="68.0" prefWidth="139.0" style="-fx-background-color: white; -fx-border-color: black;" text="Sign Up">
+                    <font>
+                        <Font name="Gabriola" size="35.0" />
+                    </font>
+                </Button>
+                <ComboBox fx:id="compoboxLogin" layoutX="206.0" layoutY="168.0" prefWidth="150.0" promptText="Select User type">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:id="reihe" fx:value="Owner" />
+                            <String fx:id="paralll" fx:value="Admin" />
+                            <String fx:id="paralel" fx:value="Vet" />
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+            </children>
+        </Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1335.0" style="-fx-background-color: #7cb095;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.vetcontroller">
+    <children>
+        <ImageView fx:id="btnAdd3" fitHeight="633.0" fitWidth="603.0" layoutX="72.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@vet.jpeg" />
+            </image>
+        </ImageView>
+        <Label fx:id="lblVet" layoutX="755.0" layoutY="14.0" text="Veterinarian">
+            <font>
+                <Font name="Gabriola" size="72.0" />
+            </font>
+        </Label>
+        <Label fx:id="ll" layoutX="715.0" layoutY="215.0" text="Select your day :">
+            <font>
+                <Font name="Gabriola" size="30.0" />
+            </font>
+        </Label>
+        <Label fx:id="lll" layoutX="711.0" layoutY="299.0" text="Select your time :">
+            <font>
+                <Font name="Gabriola" size="30.0" />
+            </font>
+        </Label>
+      <TextField fx:id="a1" layoutX="878.0" layoutY="150.0" prefHeight="37.0" prefWidth="242.0" />
+      <TextField fx:id="a2" layoutX="878.0" layoutY="221.0" prefHeight="37.0" prefWidth="242.0" />
+      <Label fx:id="ll1" layoutX="762.0" layoutY="150.0" text="id : ">
+         <font>
+            <Font name="Gabriola" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="a3" layoutX="878.0" layoutY="299.0" prefHeight="37.0" prefWidth="242.0" />
+      <Button layoutX="863.0" layoutY="429.0" mnemonicParsing="false" onAction="#add1" prefHeight="60.0" prefWidth="125.0" text="add" />
+      <Button layoutX="1009.0" layoutY="429.0" mnemonicParsing="false" onAction="#update" prefHeight="60.0" prefWidth="117.0" text="update" />
+      <Button fx:id="bc" layoutX="1144.0" layoutY="429.0" mnemonicParsing="false" onAction="#back" prefHeight="60.0" prefWidth="125.0" text="back" />
+    </children>
+</AnchorPane>

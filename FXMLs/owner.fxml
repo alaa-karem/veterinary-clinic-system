@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ownercontroller">
+    <children>
+        <Label fx:id="label" layoutX="259.0" layoutY="26.0" minHeight="16" minWidth="69" prefHeight="38.0" prefWidth="148.0" textFill="#280d0d" />
+        <Label alignment="CENTER" layoutX="652.0" layoutY="-2.0" prefHeight="95.0" prefWidth="369.0" text="OWNER">
+            <font>
+                <Font name="Gabriola" size="78.0" />
+            </font>
+        </Label>
+        <Label layoutX="660.0" layoutY="106.0" prefHeight="31.0" prefWidth="177.0" text=" Day" textFill="#00061b">
+            <font>
+                <Font name="Gabriola" size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="660.0" layoutY="169.0" prefHeight="31.0" prefWidth="119.0" text="Time" textFill="#09011b">
+            <font>
+                <Font name="Gabriola" size="30.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnserve" layoutX="689.0" layoutY="485.0" mnemonicParsing="false" onAction="#inser" prefHeight="66.0" prefWidth="157.0" text="Reserve" textFill="#171501">
+            <font>
+                <Font name="Gabriola" size="35.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="finalBack" layoutX="946.0" layoutY="485.0" mnemonicParsing="false" onAction="#Back" prefHeight="38.0" prefWidth="106.0" text="Back" textFill="#141401">
+            <font>
+                <Font name="Gabriola" size="35.0" />
+            </font>
+        </Button>
+        <!--<ExpansionPanel.CollapsedPanel layoutX="273.0" layoutY="394.0" prefWidth="252" />-->
+        <Label layoutX="660.0" layoutY="230.0" prefHeight="31.0" prefWidth="199.0" text=" Animal" textFill="#010925">
+            <font>
+                <Font name="Gabriola" size="30.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="cmbTime" layoutX="899.0" layoutY="169.0" onAction="#yy" prefHeight="31.0" prefWidth="187.0" />
+        <ComboBox fx:id="cmbreserveDay" layoutX="899.0" layoutY="106.0" onAction="#com" prefHeight="31.0" prefWidth="187.0" />
+        <ImageView fitHeight="610.0" fitWidth="562.0" layoutX="-6.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@24e58236-8032-4d88-a841-8e3b1c88025d.jpg" />
+            </image>
+        </ImageView>
+      <TextField fx:id="anim" layoutX="903.0" layoutY="233.0" prefHeight="31.0" prefWidth="187.0" />
+    </children>
+</AnchorPane>
